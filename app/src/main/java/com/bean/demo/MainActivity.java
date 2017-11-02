@@ -30,18 +30,18 @@ public class MainActivity extends AppCompatActivity {
 
         if(!mBeanLayout.isAnimFinish()){
 
-            Toast.makeText(this,"动画还没有结束",Toast.LENGTH_SHORT);
+            Toast.makeText(this,"动画还没有结束",Toast.LENGTH_SHORT).show();
             return;
         }
 
         if(TextUtils.isEmpty(mEditView.getText().toString())){
 
-            Toast.makeText(this,"输入框为空",Toast.LENGTH_SHORT);
+            Toast.makeText(this,"输入框为空",Toast.LENGTH_SHORT).show();
             return;
         }
         String beanNumber = mEditView.getText().toString();
         if(!isNumeric(beanNumber)){
-            Toast.makeText(this,"输入框为中只能输入数字",Toast.LENGTH_SHORT);
+            Toast.makeText(this,"输入框为中只能输入数字",Toast.LENGTH_SHORT).show();
             return;
         }
         mBeanLayout.setBeanText(beanNumber);
