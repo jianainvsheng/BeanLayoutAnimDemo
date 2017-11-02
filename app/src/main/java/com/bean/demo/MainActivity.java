@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mBeanLayout = this.findViewById(R.id.bean_layout);
-        mEditView = this.findViewById(R.id.bean_edit);
+        mBeanLayout = (GomeBeanLayout) this.findViewById(R.id.bean_layout);
+        mEditView = (EditText) this.findViewById(R.id.bean_edit);
     }
 
     public void onClickView(View view) {
